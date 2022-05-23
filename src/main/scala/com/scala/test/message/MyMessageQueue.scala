@@ -5,6 +5,9 @@ import akka.dispatch.{Envelope, MessageQueue}
 
 import java.util.concurrent.ConcurrentLinkedQueue
 
+/**
+ * 사용자의 메일 박스를 정의
+ */
 class MyMessageQueue extends MessageQueue {
   private final val queue = new ConcurrentLinkedQueue[Envelope]()
 
