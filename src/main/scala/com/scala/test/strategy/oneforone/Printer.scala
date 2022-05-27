@@ -1,4 +1,4 @@
-package com.scala.test.strategy
+package com.scala.test.strategy.oneforone
 
 import akka.actor.Actor
 
