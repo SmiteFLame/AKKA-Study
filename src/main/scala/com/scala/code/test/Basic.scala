@@ -190,17 +190,17 @@ object FunctionalExample extends App {
   dog3.name
   dog3.name = "d"
 
-  case class CaseClass01(name: String, age: Int)
+//  case class CaseClass01(name: String, age: Int)
 
-  val test = CaseClass01("a", 10)
+//  val test = CaseClass01("a", 10)
 
-  if (test.age > 17) println("A") else println("B")
+//  if (test.age > 17) println("A") else println("B")
 
   // 왼쪽에 객체가 나오게 된다.
   object CaseClass01 { // 동반 객체
-    def apply(name: String, age: Int): CaseClass01 = new CaseClass01(name, age)
-
-    def apply(name: String): CaseClass01 = new CaseClass01(name, 10)
+//    def apply(name: String, age: Int): CaseClass01 = new CaseClass01(name, age)
+//
+//    def apply(name: String): CaseClass01 = new CaseClass01(name, 10)
 
     /**
      * caseClass 를 만들게 된다면 object가 쌍으로 생긴다.
@@ -213,8 +213,8 @@ object FunctionalExample extends App {
      */
   }
 
-  val caseClassEx2 = CaseClass01("1", 10)
-  val caseClassEx3 = CaseClass01("dd")
+//  val caseClassEx2 = CaseClass01("1", 10)
+//  val caseClassEx3 = CaseClass01("dd")
   // 동방 객체가 object 여서 전부 알아서 Static 하게 접근 하게 된다.
   // Dto, Vo는 전부 매핑이 가능하다.
 
