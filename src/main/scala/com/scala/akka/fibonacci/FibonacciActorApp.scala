@@ -6,6 +6,7 @@ import akka.util.Timeout
 
 import scala.concurrent.Await
 import scala.concurrent.duration.DurationInt
+import scala.language.postfixOps
 
 object FibonacciActorApp extends App {
   implicit val timeout = Timeout(10 seconds)

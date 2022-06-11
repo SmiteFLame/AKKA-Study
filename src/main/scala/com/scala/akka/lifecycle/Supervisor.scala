@@ -4,6 +4,7 @@ import akka.actor.SupervisorStrategy.{Escalate, Restart}
 import akka.actor.{Actor, ActorRef, OneForOneStrategy, Props}
 
 import scala.concurrent.duration.DurationInt
+import scala.language.postfixOps
 
 case class StopActor(actorRef: ActorRef)
 

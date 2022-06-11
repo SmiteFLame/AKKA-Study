@@ -4,6 +4,7 @@ import akka.actor.SupervisorStrategy.{Escalate, Restart, Resume, Stop}
 import akka.actor.{Actor, OneForOneStrategy, Props}
 
 import scala.concurrent.duration.DurationInt
+import scala.language.postfixOps
 
 class SupervisorStrategy extends Actor{
   override val supervisorStrategy = OneForOneStrategy(maxNrOfRetries = 10, withinTimeRange = 1 minute){

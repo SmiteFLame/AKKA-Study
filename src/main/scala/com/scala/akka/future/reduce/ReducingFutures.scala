@@ -5,6 +5,7 @@ import akka.util.Timeout
 import scala.concurrent.{Await, Future}
 import scala.concurrent.duration.DurationInt
 import scala.concurrent.ExecutionContext.Implicits.global
+import scala.language.postfixOps
 
 object ReducingFutures extends App{
   val timeout = Timeout(10 seconds)

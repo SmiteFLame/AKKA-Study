@@ -21,7 +21,6 @@ object BoxOffice {
   sealed trait EventResponse                         /* CreateEvent에 응답하는 메시지 */
   case class EventCreated(event: Event) extends EventResponse /* 이벤트가 생성되었을 음을 알려주는 메시지 */
   case object EventExists extends EventResponse      /* 이벤트가 이미 있음을 알려주는 메시지 */
-
 }
 
 class BoxOffice(implicit timeout: Timeout) extends Actor {

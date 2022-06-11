@@ -3,6 +3,7 @@ package com.scala.akka.future.comprehension
 import scala.concurrent.duration.DurationInt
 import scala.concurrent.{Await, Future}
 import scala.concurrent.ExecutionContext.Implicits.global
+import scala.language.postfixOps
 
 object ForComprehensions extends App {
   val futureA = Future(20 + 30)

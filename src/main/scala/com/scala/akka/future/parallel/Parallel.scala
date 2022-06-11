@@ -19,7 +19,7 @@ object Parallel extends App {
     z <- future3
   } yield (x + y + z)
 
-  future onSuccess{
+  future. onComplete{
     case sum =>
       val endTime = ((System.currentTimeMillis() - t2) / 1000.0)
       println(s"sum is $sum time taken in parallel computation $endTime seconds")

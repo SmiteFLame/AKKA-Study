@@ -7,6 +7,7 @@ import akka.stream.ActorMaterializer
 
 import scala.concurrent.Future
 import scala.concurrent.duration.DurationInt
+import scala.language.postfixOps
 
 object AkkaHttp5mins {
   implicit val system = ActorSystem() // Akka Actors

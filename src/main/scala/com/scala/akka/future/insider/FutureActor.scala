@@ -4,6 +4,7 @@ import akka.actor.Actor
 
 import scala.concurrent.duration.DurationInt
 import scala.concurrent.{Await, Future}
+import scala.language.postfixOps
 
 class FutureActor extends Actor {
 
